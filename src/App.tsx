@@ -1,10 +1,9 @@
-import "./App.css";
-import Hero from "./views/hero/index.tsx";
+import Landing from "./views/landing/index.tsx";
 
 function App() {
   return (
     <>
-      <Hero />
+      <Landing />
     </>
   );
 }
