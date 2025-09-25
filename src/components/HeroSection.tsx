@@ -6,8 +6,13 @@ type HeroSectionProps = {
   className?: string;
 };
 
-const HeroSection = ({ title, children, className }: HeroSectionProps) => {
-  return <section>{children}</section>;
+const HeroSection = ({ title, children, className = "" }: HeroSectionProps) => {
+  return (
+    <section className={className}>
+      {children}
+      <h1>{title}</h1>
+    </section>
+  );
 };
 
 export default HeroSection;

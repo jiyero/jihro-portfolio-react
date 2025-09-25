@@ -1,10 +1,13 @@
-import Section from "../../components/Section";
+import HeroSection from "../../components/HeroSection";
 
 const Hero = () => {
   return (
-    <Section title="Jihro Abendano">
-      <div className="">Image</div>
-    </Section>
+    <HeroSection
+      title="Jihro Abendano"
+      className="flex h-screen justify-center items-center"
+    >
+      <div>Image</div>
+    </HeroSection>
   );
 };
 
