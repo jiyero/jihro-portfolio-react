@@ -1,12 +1,12 @@
 import Section from "../../components/Section";
 
-const About = () => {
+const Experience = () => {
   return (
-    <Section title="About" className="" id="about">
+    <Section title="Experience" className="" id="experience">
       <div>content1 </div>
       <div>content2</div>
     </Section>
   );
 };
 
-export default About;
+export default Experience;

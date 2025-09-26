@@ -4,12 +4,14 @@ type SectionProps = {
   title: string;
   children: ReactNode;
   className?: string;
+  id: string;
 };
 
-const Section = ({ title, children, className = "" }: SectionProps) => {
+const Section = ({ title, children, id, className = "" }: SectionProps) => {
   return (
     <section
       className={`flex justify-center items-center h-screen ${className}`}
+      id={id}
     >
       <h1>{title}</h1>
       {children}
