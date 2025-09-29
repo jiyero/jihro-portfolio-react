@@ -23,23 +23,25 @@ const Nav = () => {
   };
 
   return (
-    <NavigationMenu>
-      <NavigationMenuList>
-        {navItems.map((items) => {
-          const targetId = items.toLocaleLowerCase();
-          return (
-            <NavigationMenuItem key={items}>
-              <NavigationMenuLink
-                href={`#${targetId}`}
-                onClick={(e) => handleClick(e, targetId)}
-              >
-                {items}
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          );
-        })}
-      </NavigationMenuList>
-    </NavigationMenu>
+    <nav className="sticky  top-0 z-50 bg-white border-b">
+      <NavigationMenu>
+        <NavigationMenuList>
+          {navItems.map((items) => {
+            const targetId = items.toLocaleLowerCase();
+            return (
+              <NavigationMenuItem key={items}>
+                <NavigationMenuLink
+                  href={`#${targetId}`}
+                  onClick={(e) => handleClick(e, targetId)}
+                >
+                  {items}
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            );
+          })}
+        </NavigationMenuList>
+      </NavigationMenu>
+    </nav>
   );
 };
 
