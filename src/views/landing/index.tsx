@@ -5,12 +5,12 @@ import Experience from "@/modules/landing/Experience";
 
 function Index() {
   return (
-    <>
+    <div className="font-raleway">
       <Nav />
       <Hero />
       <About />
       <Experience />
-    </>
+    </div>
   );
 }
 
