@@ -18,7 +18,7 @@ const Hero = () => {
       title="Jihro Abendano"
       className="flex h-screen justify-center items-center"
     >
-      <Carousel className="w-full max-w-xl relative">
+      <Carousel className="w-[24rem] relative">
         <CarouselContent>
           {images.map((img, index) => {
             return (
@@ -26,14 +26,14 @@ const Hero = () => {
                 <img
                   src={img}
                   alt={`${img}`}
-                  className="w-96 h-96 rounded-full object-cover"
+                  className="w-96 h-96 rounded-3xl object-cover"
                 />
               </CarouselItem>
             );
           })}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="left-4 " />
+        <CarouselNext className="right-4" />
       </Carousel>
     </HeroSection>
   );
