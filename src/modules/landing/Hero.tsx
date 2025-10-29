@@ -17,6 +17,7 @@ const Hero = () => {
     <HeroSection
       title="Jihro Abendano"
       className="flex h-screen justify-center items-center gap-20"
+      id="hero"
     >
       <Carousel className="w-[24rem] relative">
         <CarouselContent>
@@ -32,8 +33,8 @@ const Hero = () => {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious className="left-4 " />
-        <CarouselNext className="right-4 " />
+        <CarouselPrevious className="left-4 bg-transparent text-white border-0" />
+        <CarouselNext className="right-4 bg-transparent text-white border-0" />
       </Carousel>
     </HeroSection>
   );

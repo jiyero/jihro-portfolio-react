@@ -4,15 +4,11 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { Button } from "../ui/button";
 
 const Nav = () => {
   const navItems = ["About", "Experience", "Projects", "Hobbies"];
 
-  const handleClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    targetId: string
-  ) => {
+  const handleClick = (e: React.MouseEvent<HTMLElement>, targetId: string) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
@@ -24,35 +20,36 @@ const Nav = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-secondary justify-items-center py-4 ">
-      <NavigationMenu>
-        <NavigationMenuList>
-          <Button
-            variant="outline"
-            size="lg"
-            className="ml-4 bg-transparent"
-            id="hero"
-          >
-            Jihro Abendano
-          </Button>
-          <div className="flex ">
-            {navItems.map((items) => {
-              const targetId = items.toLocaleLowerCase();
+    <nav className="sticky top-0 z-50 bg-secondary py-4">
+      <div className="flex items-center justify-between mx-15">
+        <h1
+          className="text-3xl font-bold text-primary cursor-pointer"
+          onClick={(e) => handleClick(e, "hero")}
+        >
+          asdasd
+        </h1>
+
+        <NavigationMenu>
+          <NavigationMenuList className="flex justify-center space-x-6">
+            {navItems.map((item) => {
+              const targetId = item.toLowerCase();
               return (
-                <NavigationMenuItem key={items}>
+                <NavigationMenuItem key={item}>
                   <NavigationMenuLink
-                    href={`#${targetId}`}
                     onClick={(e) => handleClick(e, targetId)}
-                    className="text-xl px-4"
+                    className="text-lg font-medium text-primary hover:text-accent transition-colors cursor-pointer"
                   >
-                    {items}
+                    {item}
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               );
             })}
-          </div>
-        </NavigationMenuList>
-      </NavigationMenu>
+          </NavigationMenuList>
+        </NavigationMenu>
+
+        {/* RIGHT: Social Links */}
+        <div className="flex items-center gap-4">logos</div>
+      </div>
     </nav>
   );
 };
