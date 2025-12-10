@@ -26,7 +26,7 @@ const Nav = () => {
           className="text-3xl font-bold text-primary cursor-pointer"
           onClick={(e) => handleClick(e, "hero")}
         >
-          asdasd
+          JIHRO ABENDANO
         </h1>
 
         <NavigationMenu>
@@ -37,7 +37,7 @@ const Nav = () => {
                 <NavigationMenuItem key={item}>
                   <NavigationMenuLink
                     onClick={(e) => handleClick(e, targetId)}
-                    className="text-lg font-medium text-primary hover:text-accent transition-colors cursor-pointer"
+                    className="text-lg font-medium cursor-pointer "
                   >
                     {item}
                   </NavigationMenuLink>
@@ -47,8 +47,7 @@ const Nav = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* RIGHT: Social Links */}
-        <div className="flex items-center gap-4">logos</div>
+        <div> github , linkedin </div>
       </div>
     </nav>
   );

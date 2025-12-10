@@ -16,7 +16,7 @@ const HeroSection = ({
   return (
     <section className={className} id={id}>
       {children}
-      <h1 className="text-6xl font-bold">{title}</h1>
+      <h1 className="text-7xl font-bold">{title}</h1>
     </section>
   );
 };
