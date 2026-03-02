@@ -17,7 +17,7 @@ const About = () => {
           2 years, 1 year professionally and 1 year on my final year in college.{" "}
         </p>
       </Section>
-      <div className="relative flex overflow-x-hidden">
+      <div className="relative flex overflow-x-hidden w-screen">
         <div className="animate-marquee py-12 whitespace-nowrap">
           <span className="mx-4 text-4xl">Marquee Item 1</span>
           <span className="mx-4 text-4xl">Marquee Item 2</span>

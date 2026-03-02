@@ -14,11 +14,7 @@ import {
 const Hero = () => {
   const images = [spongebob, patrick, squidward];
   return (
-    <HeroSection
-      title="Jihro Abendano"
-      className="flex h-screen justify-center items-center gap-20"
-      id="hero"
-    >
+    <HeroSection title="Jihro Abendano" className=" gap-20" id="hero">
       <Carousel className="w-[24rem] relative">
         <CarouselContent>
           {images.map((img, index) => {
