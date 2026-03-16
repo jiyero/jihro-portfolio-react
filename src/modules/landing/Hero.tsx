@@ -1,7 +1,8 @@
 import HeroSection from "../../components/HeroSection";
-import spongebob from "../../assets/spongebob.jpeg";
-import patrick from "../../assets/patrick.jpg";
-import squidward from "../../assets/squidward.jpg";
+
+import HeroPicture1 from "../../assets/hero-pic-1.jfif";
+import HeroPicture2 from "../../assets/hero-pic-2.jfif";
+import HeroPicture3 from "../../assets/hero-pic-3.jfif";
 
 import {
   Carousel,
@@ -12,10 +13,10 @@ import {
 } from "@/components/ui/carousel";
 
 const Hero = () => {
-  const images = [spongebob, patrick, squidward];
+  const images = [HeroPicture1, HeroPicture2, HeroPicture3];
   return (
     <HeroSection title="Jihro Abendano" className=" gap-20" id="hero">
-      <Carousel className="sm:w-[24rem] w-[18rem]">
+      <Carousel className="sm:w-[24rem] w-[18rem]" opts={{ loop: true }}>
         <CarouselContent>
           {images.map((img, index) => {
             return (
