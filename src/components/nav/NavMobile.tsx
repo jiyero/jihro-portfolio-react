@@ -1,12 +1,6 @@
 import { useState } from "react";
-import type { LucideIcon } from "lucide-react";
+import type { NavIcon } from "@/types/IconType";
 import { Menu, X } from "lucide-react";
-
-type NavIcon = {
-  icon: LucideIcon;
-  href: string;
-  label: string;
-};
 
 type NavMobileProps = {
   items: string[];

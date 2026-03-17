@@ -1,4 +1,4 @@
-import type { LucideIcon } from "lucide-react";
+import type { NavIcon } from "@/types/IconType";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -6,11 +6,6 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 
-type NavIcon = {
-  icon: LucideIcon;
-  href: string;
-  label: string;
-};
 
 type NavDesktopProps = {
   items: string[];

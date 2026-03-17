@@ -1,16 +1,17 @@
 import NavDesktop from "./NavDesktop";
 import NavMobile from "./NavMobile";
-import { Github, Linkedin } from "lucide-react";
+import { FaLinkedin, FaGithub  } from "react-icons/fa";
+
 
 const Nav = () => {
   const navItems = ["About", "Experience", "Projects"];
   const navIcons = [
     {
-      icon: Linkedin,
+      icon: FaLinkedin,
       href: "https://linkedin.com/in/jihro-abendano",
       label: "LinkedIn",
     },
-    { icon: Github, href: "https://github.com/jiyero", label: "GitHub" },
+    { icon: FaGithub, href: "https://github.com/jiyero", label: "GitHub" },
   ];
 
   const handleScrollOnClick = (
@@ -21,6 +22,7 @@ const Nav = () => {
 
     if (targetId === "top") {
       window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
     }
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
