@@ -36,7 +36,7 @@ const Projects = () => {
       title: "Hulu Clone",
       description:
         "This project is a single-paged react application where I cloned the home page of Hulu to practice react. This was built using React and Boostrap 4",
-      href: "/#",
+      href: "https://github.com/jiyero/hulu-clone",
       alt: "hulu-clone",
       canView: true,
     },
