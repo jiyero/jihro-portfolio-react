@@ -7,33 +7,38 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Section from "../../components/Section";
+import vMalaysia from "../../assets/vmalaysia.png";
+import huluClone from "../../assets/hulu.png";
+import valentine from "../../assets/valentine.png";
 
 const Projects = () => {
   const projects = [
     {
-      image: "https://avatar.vercel.sh/shadcn1",
+      image: vMalaysia,
       title: "V-Malaysia 2023",
       description:
-        "A practical talk on component APIs, accessibility, and shipping",
-      href: "/#",
-      alt: "asd",
+        "This project was done under an orginzation in my college years, we built a responsive single-page application for the V-Malaysia 2023 event using React and Tailwind CSS.",
+      href: "https://the-v.net/vmalaysia2023",
+      alt: "v-malaysia-2023",
       canView: true,
     },
     {
-      image: "https://avatar.vercel.sh/shadcn1",
+      image: valentine,
       title: "Valentine's Day App",
-      description: "Bla bla blablabla bla bla bl bla blabla bla ",
-      href: "/#",
-      alt: "asd",
+      description:
+        "This is a project for my friend that wanted me to make a simple react app to ask someone to be their valentine. ",
+      href: "https://valentine-azure-rho.vercel.app/",
+      alt: "valentine-app",
       canView: true,
     },
     {
-      image: "https://avatar.vercel.sh/shadcn1",
-      title: "Undergraduate Thesis: KaBu",
-      description: "Robots",
+      image: huluClone,
+      title: "Hulu Clone",
+      description:
+        "This project is a single-paged react application where I cloned the home page of Hulu to practice react. This was built using React and Boostrap 4",
       href: "/#",
-      alt: "asd",
-      canView: false,
+      alt: "hulu-clone",
+      canView: true,
     },
   ];
 
@@ -66,8 +71,17 @@ const Projects = () => {
 
               <CardFooter>
                 {project.canView && (
-                  <Button className="w-full bg-primary text-background hover:opacity-90">
-                    View Project
+                  <Button
+                    asChild
+                    className="w-full bg-primary text-background hover:opacity-90"
+                  >
+                    <a
+                      href={project.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Project
+                    </a>
                   </Button>
                 )}
               </CardFooter>
