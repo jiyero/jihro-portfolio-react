@@ -6,7 +6,6 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 
-
 type NavDesktopProps = {
   items: string[];
   icons: NavIcon[];
@@ -17,7 +16,7 @@ const NavDesktop = ({ items, icons, handleClick }: NavDesktopProps) => {
   return (
     <div className="flex items-center justify-between mx-10">
       <h1
-        className="text-3xl font-bold text-primary cursor-pointer"
+        className="text-3xl font-bold text-background cursor-pointer"
         onClick={(e) => handleClick(e, "top")}
       >
         JIHRO ABENDANO

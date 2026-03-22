@@ -1,7 +1,6 @@
 import NavDesktop from "./NavDesktop";
 import NavMobile from "./NavMobile";
-import { FaLinkedin, FaGithub  } from "react-icons/fa";
-
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Nav = () => {
   const navItems = ["About", "Experience", "Projects"];
@@ -34,8 +33,8 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-secondary py-4 sticky top-0 z-50">
-      <div className="hidden md:block">
+    <nav className="bg-primary text-background py-4 sticky top-0 z-50">
+      <div className="hidden md:block color-">
         <NavDesktop
           items={navItems}
           icons={navIcons}
