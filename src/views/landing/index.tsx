@@ -12,11 +12,13 @@ function Index() {
       <LandingHelmet />
       <div className="font-raleway bg-background text-primary">
         <Nav />
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        {/* <Hobbies /> */}
+        <main>
+          <Hero />
+          <About />
+          <Experience />
+          <Projects />
+          {/* <Hobbies /> */}
+        </main>
       </div>
     </>
   );
