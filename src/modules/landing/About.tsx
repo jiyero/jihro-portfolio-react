@@ -46,11 +46,20 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-center gap-20 text-center w-5/6">
         <h2 className="text-6xl font-bold">About</h2>
         <p className="max-w-xl text-lg">
-          Hi! I'm Jihro Abendano, a frontend developer from the Philippines who
-          enjoys creating clean and interactive web experiences using React. I
-          have two years of experience—one year professionally and another
-          during my final year in college—where I honed my skills in building
-          responsive and user-friendly applications.
+          Hi! I'm Jihro Abendano, a frontend developer from the Philippines with
+          a passion for building clean, responsive web experiences using React
+          and TypeScript.
+          <br />
+          <br />
+          Beyond development, I'm actively expanding into SEO — applying
+          technical knowledge to improve web visibility, performance, and search
+          rankings. I'm also drawn to quality assurance, bringing a
+          detail-oriented mindset to everything I build.
+          <br />
+          <br />I have two years of experience — one year professionally and
+          another during my final year in college — and I'm currently looking
+          for opportunities in frontend development, SEO, or QA where I can
+          contribute and keep growing.
         </p>
       </div>
 

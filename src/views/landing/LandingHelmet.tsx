@@ -4,8 +4,10 @@ const LandingHelmet = () => {
   return (
     <>
       <PageHelmet
-        title="Jihro Abendano | Frontend Developer"
-        description="Portfolio of Jihro Abendano, an experienced frontend developer specializing in React. View my projects and get in touch."
+        title="Jihro Abendano | Frontend Developer · SEO · QA"
+        description="Portfolio of Jihro Abendano, a frontend developer from the Philippines 
+specializing in React and TypeScript, with growing expertise in SEO and 
+a keen interest in quality assurance."
         url="https://jihro-portfolio-react.vercel.app/"
       />
 
