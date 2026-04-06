@@ -44,7 +44,7 @@ const About = () => {
   return (
     <Section title="" className="gap-16 bg-accent" id="about">
       <div className="flex flex-col md:flex-row items-center justify-center gap-20 text-center w-5/6">
-        <h1 className="text-6xl font-bold">About</h1>
+        <h2 className="text-6xl font-bold">About</h2>
         <p className="max-w-xl text-lg">
           Hi! I'm Jihro Abendano, a frontend developer from the Philippines who
           enjoys creating clean and interactive web experiences using React. I
@@ -58,7 +58,7 @@ const About = () => {
         <div className="animate-marquee py-12 whitespace-nowrap">
           {MarqueeIcons.map(({ icon: Icon, label }) => (
             <span key={label} className="inline-flex items-center gap-2 mx-6">
-              <Icon size={40} />
+              <Icon size={40} aria-hidden="true" />
               <span>{label}</span>
             </span>
           ))}

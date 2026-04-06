@@ -21,15 +21,15 @@ const NavMobile = ({ items, icons, handleClick }: NavMobileProps) => {
 
   return (
     <div className="flex items-center justify-between mx-6">
-      <h1
+      <span
         className="text-2xl font-bold text-background cursor-pointer"
         onClick={(e) => handleItemClick(e, "top")}
       >
         JIHRO
-      </h1>
+      </span>
 
       <button onClick={() => setIsOpen(true)}>
-        <Menu className="w-7 h-7 text-background" />
+        <Menu className="w-7 h-7 text-background" aria-hidden="true" />
       </button>
 
       {isOpen && (
@@ -39,19 +39,20 @@ const NavMobile = ({ items, icons, handleClick }: NavMobileProps) => {
               className="absolute top-6 right-6"
               onClick={() => setIsOpen(false)}
             >
-              <X className="w-7 h-7 text-background" />
+              <X className="w-7 h-7 text-background" aria-hidden="true" />
             </button>
 
             {items.map((item) => {
               const targetId = item.toLowerCase();
               return (
-                <button
+                <a
                   key={item}
+                  href={`#${targetId}`}
                   onClick={(e) => handleItemClick(e, targetId)}
                   className="text-2xl font-semibold text-background"
                 >
                   {item}
-                </button>
+                </a>
               );
             })}
             <div className="flex flex-row gap-5">

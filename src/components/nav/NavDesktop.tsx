@@ -15,12 +15,12 @@ type NavDesktopProps = {
 const NavDesktop = ({ items, icons, handleClick }: NavDesktopProps) => {
   return (
     <div className="flex items-center justify-between mx-10">
-      <h1
+      <span
         className="text-3xl font-bold text-background cursor-pointer"
         onClick={(e) => handleClick(e, "top")}
       >
         JIHRO ABENDANO
-      </h1>
+      </span>
 
       <NavigationMenu>
         <NavigationMenuList className="flex justify-center space-x-6">
@@ -42,7 +42,13 @@ const NavDesktop = ({ items, icons, handleClick }: NavDesktopProps) => {
 
       <div className="flex items-center gap-4">
         {icons.map(({ icon: Icon, href, label }) => (
-          <a key={label} href={href} target="_blank" rel="noopener noreferrer">
+          <a
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+          >
             <Icon size={22} />
           </a>
         ))}

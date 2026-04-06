@@ -7,9 +7,9 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Section from "../../components/Section";
-import vMalaysia from "../../assets/vmalaysia.png";
-import huluClone from "../../assets/hulu.png";
-import valentine from "../../assets/valentine.png";
+import vMalaysia from "../../assets/vmalaysia.webp";
+import huluClone from "../../assets/hulu.webp";
+import valentine from "../../assets/valentine.webp";
 
 const Projects = () => {
   const projects = [
@@ -17,9 +17,9 @@ const Projects = () => {
       image: vMalaysia,
       title: "V-Malaysia 2023",
       description:
-        "This project was done under an orginzation in my college years, we built a responsive single-page application for the V-Malaysia 2023 event using React and Tailwind CSS.",
+        "This project was done under an organization in my college years, we built a responsive single-page application for the V-Malaysia 2023 event using React and Tailwind CSS.",
       href: "https://the-v.net/vmalaysia2023",
-      alt: "v-malaysia-2023",
+      altText: "VMalaysia 2023 made by DLSU UXSOC in 2023 with Jihro Abendano",
       canView: true,
     },
     {
@@ -28,16 +28,16 @@ const Projects = () => {
       description:
         "This is a project for my friend that wanted me to make a simple react app to ask someone to be their valentine. ",
       href: "https://valentine-azure-rho.vercel.app/",
-      alt: "valentine-app",
+      altText: "Valentine App by Jihro Abendano",
       canView: true,
     },
     {
       image: huluClone,
       title: "Hulu Clone",
       description:
-        "This project is a single-paged react application where I cloned the home page of Hulu to practice react. This was built using React and Boostrap 4",
+        "This project is a single-page react application where I cloned the home page of Hulu to practice react. This was built using React and Boostrap 4",
       href: "https://github.com/jiyero/hulu-clone",
-      alt: "hulu-clone",
+      altText: "Hulu Frontpage Clone by Jihro Abendano",
       canView: true,
     },
   ];
@@ -45,17 +45,19 @@ const Projects = () => {
   return (
     <Section title="Projects" className="bg-accent p-16" id="projects">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-16 w-full">
-        {projects.map((project, key) => {
+        {projects.map((project) => {
           return (
             <Card
               className="overflow-hidden rounded-xl shadow-lg hover:shadow-2xl pt-0 flex flex-col h-full"
-              key={key}
+              key={project.title}
             >
               <div className="aspect-video overflow-hidden">
                 <img
                   src={project.image}
-                  alt={project.alt}
+                  alt={project.altText}
                   className="w-full h-full object-cover"
+                  width={640}
+                  height={360}
                 />
               </div>
 

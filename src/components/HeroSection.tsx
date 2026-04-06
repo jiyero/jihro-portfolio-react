@@ -15,11 +15,11 @@ const HeroSection = ({
 }: HeroSectionProps) => {
   return (
     <section
-      className={`flex flex-col md:flex-row h-screen justify-center items-center ${className}`}
+      className={`flex flex-col md:flex-row-reverse h-screen justify-center items-center ${className} p-16`}
       id={id}
     >
-      {children}
       <h1 className="text-3xl sm:text-7xl font-bold">{title}</h1>
+      {children}
     </section>
   );
 };
